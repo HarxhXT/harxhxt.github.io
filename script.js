@@ -1,27 +1,12 @@
-const text = [
-  "Minecraft Server Manager",
-  "Web Developer",
-  "Event Organizer",
-  "Plugin Configurator"
-];
+// Simple fade-in animation
+const sections = document.querySelectorAll('.section');
 
-let count = 0;
-let index = 0;
-let currentText = "";
-let letter = "";
-
-(function type() {
-  if (count === text.length) count = 0;
-  currentText = text[count];
-  letter = currentText.slice(0, ++index);
-
-  document.querySelector(".typing").textContent = letter;
-
-  if (letter.length === currentText.length) {
-    count++;
-    index = 0;
-    setTimeout(type, 1500);
-  } else {
-    setTimeout(type, 120);
-  }
-})();
+window.addEventListener('scroll', () => {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      section.style.opacity = 1;
+      section.style.transform = 'translateY(0)';
+    }
+  });
+});
