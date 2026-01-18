@@ -2,99 +2,102 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
-  background: #0b0b0b;
-  color: white;
-  text-align: center;
+  background: #0b0b0f;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
 /* HERO */
 .hero {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
-.rgb-text {
-  font-size: 3.5rem;
-  background: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet);
-  background-size: 400%;
+.gradient-text {
+  font-size: 4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #7f5cff, #00f2ff);
   -webkit-background-clip: text;
-  color: transparent;
-  animation: rgb 6s infinite linear;
+  -webkit-text-fill-color: transparent;
 }
 
-@keyframes rgb {
-  0% { background-position: 0%; }
-  100% { background-position: 400%; }
-}
-
-.typing {
-  margin: 15px 0;
-  font-size: 1.2rem;
+.subtitle {
   color: #aaa;
+  margin: 15px 0;
 }
 
 .btn {
   margin-top: 20px;
   padding: 12px 30px;
-  background: #00ffd5;
+  background: linear-gradient(90deg, #7f5cff, #00f2ff);
   color: black;
   text-decoration: none;
   border-radius: 30px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.btn:hover {
-  background: white;
+  font-weight: 600;
 }
 
 /* SECTIONS */
-section {
-  padding: 70px 20px;
+.section {
+  padding: 80px 15%;
+  text-align: center;
 }
 
-h2 {
+.section h2 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
-  color: #00ffd5;
+}
+
+.section p {
+  color: #bbb;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
 }
 
 .skills span {
-  display: inline-block;
-  background: #1a1a1a;
-  padding: 10px 18px;
-  margin: 8px;
+  background: #151520;
+  padding: 10px 20px;
   border-radius: 20px;
-  transition: 0.3s;
 }
 
-.skills span:hover {
-  background: #00ffd5;
-  color: black;
+/* PROJECTS */
+.projects {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  background: #151515;
+  background: #151520;
   padding: 20px;
-  margin: 15px auto;
-  max-width: 500px;
-  border-radius: 12px;
+  width: 250px;
+  border-radius: 15px;
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
 }
 
 /* FOOTER */
 footer {
+  text-align: center;
   padding: 20px;
-  background: #000;
-  font-size: 0.9rem;
+  color: #666;
 }
