@@ -1,12 +1,11 @@
-// Simple fade-in animation
-const sections = document.querySelectorAll('.section');
+const cards = document.querySelectorAll(".card");
 
-window.addEventListener('scroll', () => {
-  sections.forEach(section => {
-    const top = section.getBoundingClientRect().top;
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
     if (top < window.innerHeight - 100) {
-      section.style.opacity = 1;
-      section.style.transform = 'translateY(0)';
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
     }
   });
 });
