@@ -137,3 +137,34 @@ body {
   margin-top: 10px;
   color: #d1d5db;
 }
+/* MOBILE FIX */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    text-align: center;
+  }
+}
