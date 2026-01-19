@@ -10,17 +10,18 @@ body {
   color: #fff;
 }
 
-/* HERO */
+/* ================= HERO ================= */
+
 .hero {
   min-height: 100vh;
   background:
     radial-gradient(circle at top, #3b82f6 0%, transparent 40%),
     linear-gradient(#0a0a16, #05050a);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  padding: 120px 20px 60px;
   text-align: center;
-  padding: 40px 20px;
 }
 
 .hero-content {
@@ -70,6 +71,11 @@ body {
   border-radius: 12px;
   text-decoration: none;
   font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
 }
 
 .primary {
@@ -82,9 +88,11 @@ body {
   color: white;
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
+
 .about {
   padding: 100px 20px;
+  margin-top: 60px;
   background: linear-gradient(#05050a, #000);
   text-align: center;
 }
@@ -112,6 +120,8 @@ body {
   line-height: 1.6;
 }
 
+/* ================= STATS ================= */
+
 .stats {
   margin-top: 50px;
   display: flex;
@@ -126,6 +136,12 @@ body {
   border-radius: 18px;
   width: 200px;
   backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  background: rgba(255,255,255,0.08);
 }
 
 .card h3 {
@@ -137,7 +153,9 @@ body {
   margin-top: 10px;
   color: #d1d5db;
 }
-/* MOBILE FIX */
+
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
 
   .hero h1 {
@@ -161,10 +179,12 @@ body {
   .stats {
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
 
   .card {
-    width: 90%;
-    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    padding: 24px;
   }
 }
