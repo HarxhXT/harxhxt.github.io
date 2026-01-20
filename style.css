@@ -6,15 +6,15 @@
 }
 
 body {
-  background: #07070d;
-  color: #fff;
+  background: #05050a;
+  color: white;
 }
 
 /* HERO */
 .hero {
   min-height: 100vh;
   background:
-    radial-gradient(circle at top, #3b82f6 0%, transparent 40%),
+    radial-gradient(circle at top, #3b82f6 0%, transparent 45%),
     linear-gradient(#0a0a16, #05050a);
   display: flex;
   align-items: center;
@@ -24,91 +24,94 @@ body {
 }
 
 .hero-content {
-  max-width: 900px;
-  animation: fadeUp 1s ease;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
+  max-width: 800px;
 }
 
 .status {
-  background: rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.1);
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 14px;
   display: inline-block;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 46px;
+  font-size: 42px;
   font-weight: 800;
-  line-height: 1.2;
 }
 
 .hero h1 span {
   color: #8b5cf6;
 }
 
-.tagline {
-  margin-top: 12px;
+.hero-image {
+  margin: 25px 0;
+}
+
+.hero-image img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 3px solid #8b5cf6;
+  box-shadow: 0 0 40px rgba(59,130,246,0.5);
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+.tech {
   color: #9ca3af;
+  margin-top: 10px;
 }
 
 .desc {
+  max-width: 600px;
   margin: 20px auto;
-  max-width: 650px;
   color: #cbd5f5;
 }
 
 .buttons {
   margin-top: 30px;
   display: flex;
-  gap: 15px;
   justify-content: center;
-  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .btn {
-  padding: 14px 30px;
+  padding: 14px 28px;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 600;
-  transition: 0.3s;
 }
 
 .primary {
-  background: linear-gradient(90deg, #8b5cf6, #3b82f6);
-  color: #fff;
+  background: linear-gradient(90deg,#8b5cf6,#3b82f6);
+  color: white;
 }
 
 .secondary {
   background: #1f2933;
-  color: #fff;
-}
-
-.btn:hover {
-  transform: translateY(-3px);
+  color: white;
 }
 
 /* ABOUT */
 .about {
   padding: 100px 20px;
-  background: linear-gradient(#05050a, #000);
   text-align: center;
 }
 
 .section-tag {
   color: #8b5cf6;
   letter-spacing: 2px;
-  font-size: 13px;
 }
 
 .about h2 {
-  margin-top: 15px;
-  font-size: 40px;
+  font-size: 36px;
+  margin-top: 10px;
 }
 
 .about h2 span {
@@ -116,26 +119,24 @@ body {
 }
 
 .about-text {
-  margin: 25px auto;
-  max-width: 720px;
+  max-width: 700px;
+  margin: 20px auto;
   color: #9ca3af;
-  line-height: 1.7;
 }
 
 .stats {
-  margin-top: 50px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .card {
   background: rgba(255,255,255,0.05);
-  padding: 35px;
-  border-radius: 18px;
-  width: 220px;
-  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  width: 200px;
 }
 
 /* SERVERS */
@@ -144,38 +145,47 @@ body {
   text-align: center;
 }
 
-.server-list {
-  margin-top: 50px;
+.server-grid {
+  margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 25px;
-  max-width: 1100px;
-  margin-inline: auto;
 }
 
 .server-card {
-  background: rgba(255,255,255,0.05);
-  padding: 30px;
+  background: linear-gradient(145deg,#0d0d1f,#06060f);
+  padding: 25px;
   border-radius: 20px;
-  transition: 0.3s;
+  border: 1px solid rgba(139,92,246,0.3);
+  transition: transform 0.3s;
 }
 
 .server-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px);
 }
 
-/* CONTACT CTA */
+.server-card h3 {
+  color: #a78bfa;
+  margin-bottom: 10px;
+}
+
+/* CONTACT */
 .contact-cta {
-  padding: 100px 20px;
+  padding: 80px 20px;
   text-align: center;
-  background: linear-gradient(#000, #05050a);
 }
 
-.contact-cta h2 span {
-  color: #8b5cf6;
+.big-btn {
+  margin-top: 20px;
+  display: inline-block;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  .hero h1 { font-size: 32px; }
+  .hero h1 {
+    font-size: 32px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
   }
