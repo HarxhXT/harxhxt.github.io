@@ -114,20 +114,37 @@ section{
   opacity:.85;
   line-height:1.6
 }
-.contact{
-  text-align:center
+
+/* CONTACT */
+.contact-cta{
+  text-align:center;
+  padding:80px 20px
 }
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:20px;
-  max-width:800px;
-  margin:auto
+.contact-text{
+  margin:15px 0 25px;
+  opacity:.8
 }
-.contact-card a{
-  color:#a855f7;
-  text-decoration:none
+.contact-links{
+  display:flex;
+  justify-content:center;
+  gap:15px;
+  flex-wrap:wrap
 }
+.contact-links a{
+  padding:12px 22px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:700;
+  color:#000;
+  background:linear-gradient(90deg,#00ffe1,#a855f7);
+  box-shadow:0 0 18px rgba(0,255,225,.5);
+  transition:.3s
+}
+.contact-links a:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 30px rgba(168,85,247,.8)
+}
+
 footer{
   text-align:center;
   padding:30px;
@@ -149,9 +166,7 @@ footer{
 
   <div class="buttons">
     <a href="#projects" class="primary">VIEW PROJECTS</a>
-    <a href="https://discord.com/users/harxhxt" target="_blank" class="secondary">
-      CONTACT
-    </a>
+    <a href="https://discord.com/users/harxhxt" target="_blank" class="secondary">CONTACT</a>
   </div>
 </section>
 
@@ -163,45 +178,22 @@ footer{
   <div class="grid">
     <div class="card">
       <h3>🛠 Minecraft</h3>
-      <p>
-        Spigot / Paper API<br>
-        BungeeCord<br>
-        Velocity<br>
-        NMS<br>
-        ProtocolLib
-      </p>
+      <p>Spigot / Paper API<br>BungeeCord<br>Velocity<br>NMS<br>ProtocolLib</p>
     </div>
 
     <div class="card">
       <h3>🤖 Discord</h3>
-      <p>
-        Discord.js<br>
-        JDA<br>
-        Lavalink<br>
-        Slash Commands<br>
-        Buttons
-      </p>
+      <p>Discord.js<br>JDA<br>Lavalink<br>Slash Commands<br>Buttons</p>
     </div>
 
     <div class="card">
       <h3>🌐 Web Development</h3>
-      <p>
-        HTML • CSS • JavaScript<br>
-        Responsive UI<br>
-        Neon / Cyberpunk Design<br>
-        Animated Websites
-      </p>
+      <p>HTML • CSS • JavaScript<br>Responsive UI<br>Neon / Cyberpunk<br>Animations</p>
     </div>
 
     <div class="card">
       <h3>🗄 Databases</h3>
-      <p>
-        MySQL<br>
-        MongoDB<br>
-        Redis<br>
-        SQLite<br>
-        PostgreSQL
-      </p>
+      <p>MySQL<br>MongoDB<br>Redis<br>SQLite<br>PostgreSQL</p>
     </div>
   </div>
 </section>
@@ -227,42 +219,17 @@ footer{
   </div>
 </section>
 
-  <!-- CONTACT -->
-<section class="contact">
-  <span class="section-tag">GET IN TOUCH</span>
-
-  <h2 class="contact-title">LET'S <span>CONNECT</span></h2>
-
-  <p class="contact-desc">
-    Have a project idea or collaboration in mind?
-    Let’s connect and build something great.
+<section class="contact-cta">
+  <h2>Let’s Work Together</h2>
+  <p class="contact-text">
+    Want to discuss a project or collaboration?<br>
+    Feel free to reach out.
   </p>
 
-  <div class="contact-grid">
-
-    <!-- DISCORD -->
-    <div class="contact-card">
-      <h3>Discord</h3>
-      <p>@harxhxt</p>
-    </div>
-
-    <!-- GMAIL -->
-    <div class="contact-card">
-      <h3>Email</h3>
-      <p>harxhxt@gmail.com</p>
-    </div>
-
-    <!-- GITHUB -->
-    <div class="contact-card">
-      <h3>GitHub</h3>
-      <p>github.com/harxhxt</p>
-    </div>
-
-  </div>
-</section>
-        </a>
-      </p>
-    </div>
+  <div class="contact-links">
+    <a href="https://discord.com/users/harxhxt" target="_blank">Discord</a>
+    <a href="https://github.com/harxhxt" target="_blank">GitHub</a>
+    <a href="mailto:harshbankey09@gmail.com">Email</a>
   </div>
 </section>
 
