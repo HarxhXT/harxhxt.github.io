@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
   <title>Contact HarxhXT</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <section class="contact-cta">
-  <h2>Contact <span>Me</span></h2>
-  <p>Click below to directly send me an email.</p>
+  <h2>Contact Me</h2>
 
-  <a class="btn primary"
-     href="mailto:harshbankey09@gmail.com?subject=Project%20Inquiry">
-     Send Email
-  </a>
+  <form action="https://formsubmit.co/harshbankey09@gmail.com" method="POST">
+    
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <textarea name="message" placeholder="What work do you need?" required></textarea>
+
+    <button class="btn primary" type="submit">
+      Send Message
+    </button>
+
+  </form>
 </section>
 
 </body>
