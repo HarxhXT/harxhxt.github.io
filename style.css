@@ -188,4 +188,35 @@ body {
   .buttons {
     flex-direction: column;
   }
+  
+/* CONTACT LINKS (CYBERPUNK NEON) */
+.contact-links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  padding: 12px 22px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+  box-shadow: 0 0 15px rgba(139,92,246,0.5);
+  transition: all 0.3s ease;
+}
+
+.contact-links a:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 0 25px rgba(59,130,246,0.9);
+}
+
+/* CYBERPUNK TEXT */
+.contact-cta p {
+  margin-top: 15px;
+  color: #9ca3af;
+  font-size: 16px;
   }
